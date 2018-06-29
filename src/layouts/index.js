@@ -1,38 +1,42 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
+import React from "react";
+import PropTypes from "prop-types";
+import Helmet from "react-helmet";
+import "./index.scss";
+import "./reset.css";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
 
-import Header from '../components/header'
-import './index.css'
-
+/**
+ * Index layout.
+ *
+ * @param {Func} children - Index child nodes.
+ * @param {Object} data - Site data object.
+ * @returns {*}
+ * @constructor
+ */
 const Layout = ({ children, data }) => (
   <div>
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: "description", content: "Sample" },
+        { name: "keywords", content: "sample, something" }
       ]}
     />
-    <Header siteTitle={data.site.siteMetadata.title} />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }}
-    >
+    <div className="wrapper">
+      <Header />
       {children()}
+      <Footer />
     </div>
   </div>
-)
+);
 
+/** PropTypes */
 Layout.propTypes = {
-  children: PropTypes.func,
-}
+  children: PropTypes.func
+};
 
-export default Layout
+export default Layout;
 
 export const query = graphql`
   query SiteTitleQuery {
@@ -42,4 +46,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;
