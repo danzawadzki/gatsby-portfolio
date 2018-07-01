@@ -8,7 +8,7 @@ import "./Slider.scss";
  * @constructor
  */
 const Slider = ({}) => (
-  <h1>
+  <h1 className="slider__text">
     Hello, I’m{" "}
     <span className="slider__text--hightligted">a frontend developer</span>{" "}
     based in Warsaw, Poland

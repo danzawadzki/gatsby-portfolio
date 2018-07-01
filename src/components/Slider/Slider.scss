@@ -2,8 +2,12 @@
 @import "../../assets/styles/constants";
 
 .slider {
-  &__text--hightligted {
-    color: $app__color--accent;
-    border-bottom: 0.25rem solid $app__color--accent;
+  &__text {
+    font-size: 4.5rem;
+
+    &--hightligted {
+      color: $app__color--accent;
+      border-bottom: 0.25rem solid $app__color--accent;
+    }
   }
 }
