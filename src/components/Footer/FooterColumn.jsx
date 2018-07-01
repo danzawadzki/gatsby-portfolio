@@ -1,5 +1,6 @@
 import * as React from "react";
 import PropTypes from "prop-types";
+import FooterColumnItem from "./FooterColumnItem";
 
 /**
  * Footer column component.
@@ -16,7 +17,7 @@ const FooterColumn = ({ title, links }) => (
       {links.length &&
         links.map(link => (
           <li>
-            <a href={link.url}>{link.text}</a>
+            <FooterColumnItem {...link} />
           </li>
         ))}
     </ul>
