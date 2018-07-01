@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import "./index.scss";
-import "./reset.css";
+import "../assets/styles/normalize.scss";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 
