@@ -2,14 +2,14 @@ import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import "./index.scss";
-import "../assets/styles/normalize.scss";
+import "../assets/styles/styles.scss";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 
 /**
  * Index layout.
  *
- * @param {Func} children - Index child nodes.
+ * @param {Function} children - Index child nodes.
  * @param {Object} data - Site data object.
  * @returns {*}
  * @constructor

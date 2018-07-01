@@ -1,0 +1,19 @@
+/** Global styles. */
+@import "./constants.scss";
+@import "./normalize.scss";
+
+body {
+  background-color: $app__color--bg;
+  color: $typo__text--color;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: $typo__link--color;
+  text-decoration: $typo__link--decoration;
+}

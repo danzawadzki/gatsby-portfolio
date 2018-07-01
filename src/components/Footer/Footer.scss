@@ -5,7 +5,11 @@
   grid-auto-rows: minmax(150px, auto);
   grid-gap: 1rem;
 
-  &-column {
-    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/** Footer column styles. */
+.footer-column {
+  &__title {
+
   }
 }

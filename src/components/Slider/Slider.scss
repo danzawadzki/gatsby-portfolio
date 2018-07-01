@@ -1,1 +1,9 @@
 /** Slider styles. */
+@import "../../assets/styles/constants";
+
+.slider {
+  &__text--hightligted {
+    color: $app__color--accent;
+    border-bottom: 0.25rem solid $app__color--accent;
+  }
+}
