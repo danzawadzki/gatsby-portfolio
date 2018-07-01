@@ -1,8 +1,20 @@
+/** Imports */
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+
 /** Colors constants. */
-$app__color--bg: #1a1a1a;
-$app__color--accent: #ff1472;
+$gray: #1a1a1a;
+$pink: #ff1472;
+$white--transparent: rgba(255,255,255,.4);
+
+$app__color--bg: $gray;
+$app__color--accent: $pink;
 
 /** Typography constants. */
 $typo__text--color: #fff;
 $typo__link--color: $typo__text--color;
 $typo__link--decoration: none;
+$typo__family--main: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$typo__family--sub: "Inconsolata", monospace;
+
+/** Animations. */
+$transition--default: all cubic-bezier(0.37, 0.31, 0.2, 0.85) 250ms;

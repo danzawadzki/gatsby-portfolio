@@ -5,6 +5,23 @@
 body {
   background-color: $app__color--bg;
   color: $typo__text--color;
+  font-family: $typo__family--sub;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $typo__family--main;
+}
+
+h4 {
+  text-transform: uppercase;
+  color: $white--transparent;
+  font-weight: 400;
+  letter-spacing: .125rem;
+  font-size: .75rem;
 }
 
 ul {
@@ -13,7 +30,32 @@ ul {
   margin: 0;
 }
 
+li {
+  margin: 0.75rem 0;
+}
+
 a {
   color: $typo__link--color;
   text-decoration: $typo__link--decoration;
+  transition: $transition--default;
+  display: flex;
+  font-family: $typo__family--sub;
+
+  &::before {
+    content: "";
+    display: inline-flex;
+    height: 1px;
+    width: 0;
+    background: $typo__link--color;
+    margin-right: 0;
+    margin-top: 0.45rem;
+    transition: $transition--default;
+  }
+
+  &:hover {
+    &::before {
+      width: 12px;
+      margin-right: 5px;
+    }
+  }
 }
