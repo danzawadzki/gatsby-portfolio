@@ -1,3 +1,5 @@
+@import "../../assets/styles/constants";
+
 /** Footer styles. */
 .footer {
   display: grid;
@@ -5,12 +7,30 @@
   grid-auto-rows: minmax(150px, auto);
   grid-gap: 1rem;
   padding-bottom: 2rem;
-
 }
 
 /** Footer column styles. */
 .footer-column {
   &__title {
+  }
 
+  &__link {
+    &::before {
+      content: "";
+      display: inline-flex;
+      height: 1px;
+      width: 0;
+      background: $typo__link--color;
+      margin-right: 0;
+      margin-top: 0.45rem;
+      transition: $transition--default;
+    }
+
+    &:hover {
+      &::before {
+        width: 12px;
+        margin-right: 5px;
+      }
+    }
   }
 }

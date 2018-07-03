@@ -40,22 +40,4 @@ a {
   transition: $transition--default;
   display: flex;
   font-family: $typo__family--sub;
-
-  &::before {
-    content: "";
-    display: inline-flex;
-    height: 1px;
-    width: 0;
-    background: $typo__link--color;
-    margin-right: 0;
-    margin-top: 0.45rem;
-    transition: $transition--default;
-  }
-
-  &:hover {
-    &::before {
-      width: 12px;
-      margin-right: 5px;
-    }
-  }
 }

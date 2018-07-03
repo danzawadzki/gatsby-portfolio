@@ -12,11 +12,23 @@ import PropTypes from "prop-types";
  */
 const FooterColumnItem = ({ url, text, type = "link" }) => {
   if (type === "link") {
-    return <a href={url}>{text}</a>;
+    return (
+      <a href={url} className="footer-column__link">
+        {text}
+      </a>
+    );
   } else if (type === "phone") {
-    return <a href={`tel:${url}`}>{text}</a>;
+    return (
+      <a href={`tel:${url}`} className="footer-column__link">
+        {text}
+      </a>
+    );
   } else if (type === "mail") {
-    return <a href={`mailto:${url}`}>{text}</a>;
+    return (
+      <a href={`mailto:${url}`} className="footer-column__link">
+        {text}
+      </a>
+    );
   } else {
     return <p>{text}</p>;
   }
