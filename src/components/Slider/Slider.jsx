@@ -19,14 +19,14 @@ class Slider extends React.Component {
       strings: [
         "a frontend developer",
         "a javascript enthusiast",
-        "a design enthusiast",
-        "a football lover",
-        "a star wars fan"
+        "a design admirer",
+        "a football addict",
+        "a geek"
       ],
-      typeSpeed: 60,
+      typeSpeed: 80,
       backSpeed: 40,
       startDelay: 20,
-      backDelay: 1000,
+      backDelay: 2000,
       loop: true
     };
 
