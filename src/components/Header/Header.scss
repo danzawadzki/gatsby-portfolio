@@ -1,6 +1,18 @@
+@import "../../assets/styles/constants";
+
 /** Header. */
 .header {
   display: flex;
   align-items: flex-end;
   height: 8rem;
+
+  &__logo {
+    height: 48px;
+    width: 48px;
+    transition: $transition--default;
+
+    &:hover {
+      transform: scale(0.8);
+    }
+  }
 }

@@ -1,5 +1,6 @@
 import * as React from "react";
 import "./Header.scss";
+import HeaderLogo from "./HeaderLogo";
 
 /**
  * Header component.
@@ -9,7 +10,7 @@ import "./Header.scss";
  */
 const Header = ({}) => (
   <header className="header">
-    Header
+    <HeaderLogo/>
   </header>
 );
 
