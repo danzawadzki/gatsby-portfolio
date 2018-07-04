@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "gatsby-portfolio",
+  "description": "Daniel Zawadzki portfolio",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Daniel Zawadzki <hello@danielzawadzki.com>",
   "dependencies": {
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",
@@ -14,7 +14,7 @@
     "typed.js": "^2.0.8"
   },
   "keywords": [
-    "gatsby"
+    "frontend, developer, javascript, ecmascript, ecmascript, webdeveloper"
   ],
   "license": "MIT",
   "scripts": {

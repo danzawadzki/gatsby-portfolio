@@ -1,8 +1,6 @@
 import React from "react";
 import Slider from "../components/Slider/Slider";
 
-const IndexPage = () => (
-  <Slider/>
-);
+const IndexPage = () => <Slider />;
 
 export default IndexPage;
