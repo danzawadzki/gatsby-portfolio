@@ -30,7 +30,7 @@ const FooterColumnItem = ({ url, text, type = "link" }) => {
       </a>
     );
   } else {
-    return <p>{text}</p>;
+    return <p style={{margin: "12px 0"}}>{text}</p>;
   }
 };
 

@@ -15,10 +15,21 @@ const Footer = ({}) => {
    * @type {*[]}
    */
   const socialLinks = [
-    { url: "google.com", text: "Github" },
-    { url: "google.com", text: "LinkedIn" },
-    { url: "google.com", text: "Twitter" },
-    { url: "google.com", text: "Medium" }
+    { url: "https://github.com/danzawadzki", text: "Github" },
+    { url: "https://www.linkedin.com/in/danzawadzki/", text: "LinkedIn" },
+    { url: "https://twitter.com/danzawadzki7", text: "Twitter" }
+    //{ url: "google.com", text: "Medium" }
+  ];
+
+  /**
+   * Technologies.
+   *
+   * @type {*[]}
+   */
+  const technologyLinks = [
+    { text: "ES2015+, React, Redux", type: "text" },
+    { text: "Express, GraphQL, MongoDB, ", type: "text" },
+    { text: "Unit Testing, HTML5, CSS3", type: "text" }
   ];
 
   /**
@@ -39,8 +50,8 @@ const Footer = ({}) => {
   return (
     <footer className="footer">
       <FooterColumn title="Contact" links={contactLinks} />
+      <FooterColumn title="Technologies" links={technologyLinks} />
       <FooterColumn title="Social" links={socialLinks} />
-      <FooterColumn title="Tech" links={socialLinks} />
     </footer>
   );
 };
